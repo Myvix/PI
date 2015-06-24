@@ -1,0 +1,18 @@
+Heuristica de Avaliação:
+A estrela:
+
+	inimigo vai executar um passo de cada vez e a partir do seu tipo lutador ou arqueiro(em medida do tempo estou pensando em retirar o atirador). ao executar o passo ele vai executar sua Segunda IA a Arvore de decisões.
+A Ia dele não existirá um custo, relacionado a algo que impeça ele de chegar no Player além das colisões. Então o A estrela Irá somente buscar o caminho mais rapido de alcançar o jogador para ataca-lo.
+	Como a arvore se baseará em todas as colisões do tipo solido(tipo do proprio inimigo), o A Estrela terá que desviar de outros inimigos no caminho.   
+	
+	Se possivel fazer os atiradores eles vão andar até o jogador entrar no alcance de batalha, que é a area no qual ele pode infligir dano ao jogador, para realizar o ataque.
+
+Arvore de Decisões:
+	Uma véz dentro do Alcance de batalha,(proximo suficiente do jogador) a arvore de decisões irá escolher se ataca, defende ou foge(em medida do tempo estou pensando em retirar o fugir ).
+ a Arvore possuirá a lista de inimigos como um dos sensores do agente para auxiliar a arvore de decisões, se a lista tiver um numero razoavel de inimigos ( 1/3 da quantidade criada no inicio), ele vai preferir mais o ataque do que a defesa, a situação oposta quando for 3/3, em 2/3 não terá não será considerado um custo.
+
+
+
+Dificuldade:
+	A dificuldade será apenas um numero multiplicador, que influenciarar na vida/dano e quantidade de Inimigos.
+	Caso o Atirador & Fugir seja implementado, o atirador terá um custo maior em relação a fugir, para dar mais trabalho ao jogador e fugir sejá um Ponto aleatorio que não exista colisão dentro do alcance de batalha e a dificuldade irá aumentar a distance de fulga e ataque.
