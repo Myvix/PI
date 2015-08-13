@@ -1,0 +1,31 @@
+// Iterface que Personagem e Inimigo tem em comum
+
+
+Interface vivo {
+// **************ATRIBUTOS ************************************
+position
+name;
+tipo;
+id;
+colisão;
+Imagens;
+colisão;
+iventario
+Skills
+Status
+//***************************************************
+
+
+
+
+//**************METODOS******************************
+update
+draw
+mover
+colisão;
+drop
+Events
+create
+Skills
+
+}
